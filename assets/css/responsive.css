@@ -58,15 +58,16 @@
   }
 
   .content p {
-    /*color: red;*/
+    color: 263238;
     font-size: 15px;
   }
 
   /* Working on fixing the title headers for the smaller screens*/
-  .content h3 {
+  /* .content h3 {
     color: green;
-  }
+  } */
 }
+
 
 /* small mobile :320px. */
 @media (max-width: 767px) {

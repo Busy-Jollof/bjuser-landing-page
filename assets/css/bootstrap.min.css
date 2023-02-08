@@ -523,13 +523,23 @@ progress {
     max-width: 100%;
     height: 800px;
     width: 900%;
-
-    /* width: 900px;*/
     padding-left: 10px;
-    /* background-color: red;*/
+    
   }
 
 
+}
+
+@media (max-width: 767px) {
+  .img-fluid {
+    height: 600px;
+    max-width: 133%;
+    margin-left: 89px;
+ }
+
+ .img-fluid2 {
+  height: 270px;
+ }
 }
 
 .img-thumbnail {
