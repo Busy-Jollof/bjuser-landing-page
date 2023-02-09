@@ -1,0 +1,231 @@
+/* Normal desktop :1499px. */
+@media (max-width: 1499px) {
+}
+
+/* Normal desktop :1399px. */
+@media (max-width: 1399px) {
+}
+
+/* Normal desktop :1199px. */
+@media (max-width: 1199px) {
+  .hero__content {
+    max-width: 504px;
+    margin: 0 auto;
+    padding: 15px 20px;
+  }
+}
+
+/* Normal Tablate :991px. */
+@media (max-width: 991px) {
+  .hero__content {
+    padding: 36px 20px;
+  }
+  .hero__content h2 {
+    font-size: 40px;
+  }
+  .hero__content h3 {
+    font-size: 22px;
+  }
+  .hero__content h6 {
+    font-size: 14px;
+  }
+  .hero__content h6 span img {
+    max-width: 20px;
+  }
+  .hero__wrapper .col-lg-5 {
+    max-width: 40%;
+    width: 40%;
+  }
+  .hero__wrapper .col-lg-7 {
+    max-width: 60%;
+    width: 60%;
+  }
+
+  .cta__area {
+    padding-top: 50px;
+    padding-bottom: 85px;
+  }
+  .contact-inner {
+    background-image: none !important;
+  }
+  .contact-img {
+    text-align: center;
+  }
+  .contact-img img {
+    max-width: 415px;
+    margin: 0 auto;
+    margin-left: -100px;
+  }
+
+  .content p {
+    /*color: red;*/
+    font-size: 15px;
+  }
+
+  /* Working on fix*/
+  .content h3 {
+    color: green;
+  }
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+  .hero__wrapper .col-lg-7 {
+    max-width: 100%;
+    width: 100%;
+  }
+  .hero__wrapper .col-lg-5 {
+    width: 40%;
+    display: none;
+  }
+  .hero__content {
+    padding: 99px 25px 80px;
+  }
+  .hero__wrapper {
+    border-radius: 0px;
+  }
+  section.hero__area .container {
+    padding: 0px 0px;
+  }
+
+  .hero__content h6 {
+    font-size: 18px;
+  }
+  .hero__content h2 {
+    font-size: 45px;
+  }
+  .hero__content h3 {
+    font-size: 25px;
+  }
+  .hero__btns a {
+    margin-right: 6px;
+  }
+  .working__area {
+    padding: 0px;
+  }
+  section.working__area .container {
+    padding: 0px;
+  }
+  .working__content {
+    max-width: 100%;
+    width: 100%;
+  }
+  .working__wrapper {
+    border-radius: 0px;
+    margin-left: 0px;
+    background: #fff;
+    box-shadow: none;
+  }
+  .working__thumb {
+    max-width: 350px;
+    margin: 0 auto;
+    top: -40px;
+  }
+  .working__content {
+    max-width: 100%;
+    width: 100%;
+    padding: 49px 30px 75px 30px;
+    background: radial-gradient(
+      42% 44.11% at 50% 50.14%,
+      rgba(38, 50, 56, 0.2) 0%,
+      rgba(2, 152, 55, 0.2) 83.85%
+    );
+  }
+  section.launch__area .container {
+    padding: 0px;
+  }
+  .launch__wrapper {
+    background: radial-gradient(
+      49.86% 49.86% at 52.78% 44.14%,
+      rgba(38, 45, 56, 0.86) 0%,
+      #263238 100%
+    );
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+    padding: 59px 36px 70px;
+  }
+  .launch__thumb {
+    margin-bottom: 52px;
+  }
+  .newsletter__area {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+  section.newsletter__area .container {
+    padding: 0px;
+  }
+  .newsletter__wrapper {
+    border-radius: 0px;
+  }
+  .footer {
+    padding-bottom: 34px;
+  }
+  .header {
+    padding: 12px 0;
+  }
+  .content h3 {
+    font-size: 27px;
+    margin-bottom: 30px;
+  }
+  .content p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 15px;
+  }
+  .content h4 {
+    font-size: 20px;
+  }
+  .launch-icon {
+    max-width: 66px;
+    margin-left: -26px;
+    top: -13px;
+  }
+  label.form-label {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 4px;
+  }
+  .launch__form p {
+    font-size: 11px !important;
+  }
+  input.form-control.w-25 {
+    width: 50% !important;
+  }
+  .launch__form h5 {
+    font-size: 16px;
+  }
+  .check-item label span.check-text {
+    font-size: 14px !important;
+  }
+  .launch__form {
+    margin-bottom: 30px;
+  }
+  .faq__item h5 {
+    font-size: 16px;
+  }
+  .contact-img img {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-left: -63px;
+  }
+  .contact__wrapper h2 {
+    font-size: 27px;
+    margin-bottom: 15px;
+  }
+  .contact__wrapper p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .contact-padding {
+    padding: 40px 0px 50px;
+  }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 450px;
+  }
+}

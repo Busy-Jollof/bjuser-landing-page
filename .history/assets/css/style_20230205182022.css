@@ -1,0 +1,782 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    color: #263238;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    color: #263238;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+a:hover {
+    text-decoration: none
+}
+
+
+/*---------------------- Header area start ----------------------*/
+
+.menu-close {
+    font-size: 22px;
+    color: #3d424e;
+    position: absolute;
+    top: 18px;
+    left: 19px;
+    cursor: pointer;
+    transition: .4s;
+    display: none;
+}
+
+.menu-close:hover {
+    color: #2AB66A;
+}
+
+.offcanvas-area {
+    position: fixed;
+    right: -100%;
+    height: auto;
+    width: 255px;
+    background: #EBEBEB;
+    z-index: 6;
+    padding-top: 35px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    visibility: hidden;
+    padding: 35px 35px 88px;
+    border-radius: 4px;
+}
+
+.offcanvas-area.active {
+    right: 0px;
+    visibility: visible;
+}
+
+.offcanvas-area .main-menu ul li a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #263238;
+    text-decoration: none;
+    padding: 11px 0px;
+    display: block;
+}
+
+.offcanvas-area .main-menu ul li a:hover, .offcanvas-area .main-menu ul li a[aria-expanded="true"] {
+    color: #2AB66A;
+}
+
+.offcanvas-menu .main-menu ul {
+    display: block;
+    padding-left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.offcanvas-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index: 5;
+}
+
+.offcanvas-overlay.active {
+    opacity: .9;
+    visibility: visible;
+}
+
+.menu-open {
+    font-size: 27px;
+    color: #2AB66A;
+    display: none;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+    margin-left: 20px;
+    margin-right: 8px;
+}
+
+.offcanvas-menu .common-btn {
+    font-size: 17px;
+    padding: 9px 30px;
+    border-radius: 12px;
+}
+
+.subb-menu {
+    padding-left: 10px;
+}
+
+.offcanvas-area .main-menu .subb-menu a {
+    font-size: 16px;
+    margin: 0px;
+    padding-left: 10px;
+    margin-left: 26px;
+    margin-bottom: 10px;
+}
+
+.offcanvas-area .main-menu .subb-menu a:last-child {
+    margin-bottom: 20px;
+}
+
+.header {
+    position: relative;
+    padding: 32px 0;
+    background: #fff;
+    transition: .3s;
+    z-index: 111;
+}
+
+.header__nav ul {
+    list-style: none;
+}
+
+.header__nav ul li a {
+    padding: 11px 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.13;
+    text-align: center;
+    transition: .3s;
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 12px;
+    border-radius: 7px;
+}
+
+.header__nav ul li a.active {
+    color: #fff !important;
+    background: #029837f2;
+}
+
+.header__nav ul li a:hover {
+    color: #029837f2;
+}
+
+/*---------------------- Header area end ----------------------*/
+
+
+/*---------------------- Hero area start ----------------------*/
+.hero__wrapper {
+    background: #263238;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.hero__thumb {
+    height: 100%;
+}
+
+.hero__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 7px 7px 0;
+}
+
+.hero__wrapper .col-lg-5 {
+    max-width: 47%;
+    width: 47%;
+}
+
+.hero__wrapper .col-lg-7 {
+    max-width: 53%;
+    width: 53%;
+}
+
+.hero__content {
+    max-width: 504px;
+    margin: 0 auto;
+}
+
+.hero__content__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__content h6 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    text-align: start;
+    color: #FFFFFF;
+    margin-bottom: 9px;
+}
+
+.hero__content h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 1;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 12px;
+}
+
+.hero__content h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.1;
+    color: #E6E6E6;
+    margin-bottom: 10px;
+}
+
+.hero__content h6 span {
+    margin-right: 5px;
+    position: relative;
+    top: -1px;
+}
+
+.text-green {
+    color: #029837F2 !important;
+}
+
+.text-yellow {
+    color: #FE8200 !important;
+}
+
+.hero__content h5 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.hero__content p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-bottom: 26px;
+}
+
+.common-btn {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.13;
+    text-align: center;
+    color: #FFFFFF;
+    transition: .3s;
+    text-decoration: none;
+    background: rgba(2, 152, 55, 0.95);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    display: inline-block;
+    padding: 15px 26px;
+    border: 2px solid transparent;
+}
+.common-btn.common-btn-lg{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 50px;
+}
+
+.common-btn.btn-bordered {
+    background: #FFFFFF;
+    border: 2px solid #029837f2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    color: #029837f2;
+}
+
+.common-btn:hover {
+    background: #263238;
+    color: #fff;
+}
+
+.common-btn.btn-bordered:hover {
+    background-color: #029837f2;
+    color: #fff;
+}
+
+.hero__btns a {
+    margin-right: 19px;
+}
+
+.common-btn.hover-white:hover {
+    background-color: #fff;
+    color: #263238;
+}
+
+/*---------------------- Hero area end ----------------------*/
+
+
+/*---------------------- Working area start ----------------------*/
+.working__area {
+    padding: 110px 0;
+}
+
+.working__wrapper {
+    background: radial-gradient(12.31% 45.25% at 53.44% 54.75%, rgba(2, 53, 20, 0.2) 7.81%, rgba(2, 152, 55, 0.138) 100%);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    margin-left: 15px;
+}
+
+.working__content {
+    max-width: 430px;
+}
+
+.common-content h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 1.1;
+    color: #263238;
+    margin-bottom: 10px;
+}
+
+.common-content p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #263238;
+}
+
+.common-content-btn {
+    padding-top: 11px;
+}
+
+.common-btn.btn-dark {
+    background: #263238;
+}
+
+.common-btn.btn-dark:hover {
+    background: #039337;
+    color: #fff;
+    border-color: #039337;
+}
+
+.working__thumb {
+    position: relative;
+    z-index: 1;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    margin-left: -14px;
+}
+
+/*---------------------- Working area end ----------------------*/
+
+
+/*---------------------- Launch area start ----------------------*/
+.launch__wrapper {
+    background: radial-gradient(53.47% 53.47% at 50.04% 46.53%, #263238 18.75%, rgba(38, 47, 56, 0.921026) 77.06%, rgba(38, 45, 56, 0.86) 100%);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    padding: 72px 19px;
+}
+
+.launch__content {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+label.form-label{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #263238;
+}
+label.form-label sup{
+    color: #029837F2;
+    top: 0px;
+}
+
+.fw-medium{
+    font-weight: 500 !important;
+}
+input.form-control{
+    border: 2px solid #029837F2;
+    border-radius: 3px;
+    box-shadow: none !important;
+}
+textarea.form-control{
+    border: 2px solid #029837F2;
+    border-radius: 3px;
+    box-shadow: none !important;
+    resize: none;
+}
+textarea.form-control:focus{
+    border-color: #029837F2;
+}
+input.form-control:focus{
+    border-color: #029837F2;
+}
+.check-item input{
+    display: none;
+}
+.check-item input:checked ~ label span.check-ind{
+    background: #029837;
+}
+.check-item label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.check-item label span.check-ind{
+    flex: 0 0 auto;
+    width: 15px;
+    height: 15px;
+    background: #FFFFFF;
+    border: 2px solid rgba(2, 152, 55, 0.95);
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+}
+.check-item label span.check-ind::after
+.check-item label span.check-text{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+}
+.check-item label span.check-text sup img{
+    max-width: 100%;
+}
+
+
+
+
+.launch__form p{
+    font-size: 15px !important;
+}
+.launch__form p.small {
+    font-size: 12px !important;
+    line-height: 18px;
+}
+.launch__form h5{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+.launch__form h5 sup{
+    color: #029837F2;
+}
+.launch__form{
+    margin-bottom: 60px;
+}
+
+
+
+
+
+/*---------------------- Launch area end ----------------------*/
+
+
+/*---------------------- Newsletter area start ----------------------*/
+.newsletter__wrapper {
+    background: #029837;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+.newsletter__area {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.newsletter__box {
+    max-width: 405px;
+    margin: 0 auto;
+}
+
+.newsletter__box h5 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.newsletter__box p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+}
+
+.newsletter__form {
+    max-width: 332px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter__form input {
+    background: #DADADA;
+    border-radius: 7px 0px 0px 7px;
+    padding: 5px 15px;
+    border: 0;
+    outline: none;
+    height: 42px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.newsletter__form .common-btn {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 15px;
+    height: 42px;
+    border-radius: 0 5px 5px 0;
+    padding: 0;
+    width: 100px;
+    border: 1px solid #263238 !important;
+}
+
+.newsletter__form .common-btn:hover {
+    background: #dadada;
+    color: #000;
+}
+
+/*---------------------- Newsletter area end ----------------------*/
+
+
+/*---------------------- Content area start ----------------------*/
+.content__area {
+    padding: 75px 0;
+}
+
+.content h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 1.1;
+    color: #263238;
+    margin-bottom: 44px;
+}
+
+.content p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.65;
+    color: #263238;
+    margin-bottom: 20px;
+
+    @media (max-width: 991px) {}
+}
+
+.about--area::after {
+    clip-path: polygon(76% 0, 100% 66%, 68% 100%, 0 100%, 0 41%);
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 120px);
+    content: '';
+    z-index: -1;
+    background: rgba(2, 152, 55, 0.07);
+    border-radius: 20px;
+}
+
+.about--area {
+    position: relative;
+    z-index: 1;
+}
+
+.content h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+.content-btn {
+    padding-top: 5px;
+}
+
+.cta__area {
+    padding-top: 50px;
+    padding-bottom: 140px;
+}
+
+.launch-icon {
+    position: relative;
+    max-width: 149px;
+    margin-left: -75px;
+    display: inline-block;
+    top: -35px;
+    height: 0;
+    z-index: -1;
+}
+
+.faq__item h5 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    color: rgba(2, 152, 55, 0.95);
+    margin-bottom: 10px;
+}
+
+.faq__item {
+    padding-bottom: 15px;
+}
+
+.faq__item h5 span {
+    color: #263238;
+}
+
+/*---------------------- Content area end ----------------------*/
+
+
+/*---------------------- constat area start ----------------------*/
+.contact-padding{
+    padding: 40px 0px 150px;
+}
+.contact__wrapper h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+.contact__wrapper p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.contact__form label.form-label{
+    margin-bottom: 3px;
+    font-size: 16px;
+
+}
+.contact__form .check-item label span.check-text{
+    font-size: 15px;
+    font-weight: 500;
+}
+.contact-inner {
+    background-size: 64%;
+    background-repeat: no-repeat;
+    background-position: 113% 90px;
+}
+.contact-inner p.small{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+/*---------------------- constat area end ----------------------*/
+
+
+
+
+
+/*---------------------- Footer area start ----------------------*/
+.footer {
+    padding-bottom: 45px;
+}
+
+.copyright {
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.1125px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #263238;
+}
+
+/*---------------------- Footer area end ----------------------*/
+
+
+
+
+
+/* -------------------------- timeline-start ------------------------------ */
+
+.timline-wrapper{
+
+}
+
+.timeline-item{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-content{
+    flex: 0 0 auto;
+    width: 50%;
+}
+.timeline-ind{
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+
+/* -------------------------- timeline-end ------------------------------ */
