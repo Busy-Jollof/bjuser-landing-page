@@ -58,7 +58,7 @@
   }
 
   .content p {
-    color: 263238;
+   /*  color: 263238; */
     font-size: 15px;
   }
 
@@ -165,11 +165,11 @@
     padding: 12px 0;
   }
   .content h3 {
-    font-size: 27px;
+    font-size: 23px;
     margin-bottom: 30px;
   }
   .content p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 21px;
     margin-bottom: 15px;
   }
@@ -222,6 +222,19 @@
   .contact-padding {
     padding: 40px 0px 50px;
   }
+}
+
+@media (max-width: 376px) {
+  .common-btn {
+    font-size: 12px;
+  }
+  btn-bordered {
+   /*  width: 50; */
+  }
+
+  .content h3 {
+    font-size: 20px;
+   }
 }
 
 /* Large Mobile :480px. */

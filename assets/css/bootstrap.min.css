@@ -542,6 +542,21 @@ progress {
  }
 }
 
+@media (max-width: 376px) {
+  .img-fluid {
+    height: 500px;
+    margin-top: 30px;
+   }
+
+   .content p {
+    font-size: 12px !important;
+   }
+
+   /* .content h3 {
+    font-size: 20px;
+   } */
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
