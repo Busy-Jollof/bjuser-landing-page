@@ -225,11 +225,22 @@
 }
 
 @media (max-width: 376px) {
-  .common-btn {
-    font-size: 12px;
+  .header__logo img, .bar img {
+    max-width: 90%;
   }
-  btn-bordered {
-   /*  width: 50; */
+
+  .offcanvas-area .main-menu ul li a {
+    color: #263238;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.offcanvas-area.active {
+  width: 220px;
+}
+
+  .common-btn, .hero__content p, .common-content p {
+    font-size: 12px;
   }
 
   .content h3 {
