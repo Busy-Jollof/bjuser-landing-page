@@ -87,40 +87,46 @@
             <div class="launch__form">
               <div class="row">
                 <div class="col-lg-7">
-                  <form action="">
+                  <div id="error" style="display: none; color: red"></div>
+                  <div id="success" style="display: none; color: green"></div>
+                  <form method="post">
                     <div class="row">
                       <div class="col-md-6 mb-2">
                         <div class="mb-1">
-                          <label for="" class="form-label"
-                            >Name<sup>*</sup></label
+                          <label for="contactName" class="form-label"
+                          >Name<sup>*</sup></label
                           >
-                          <input type="text" class="form-control" />
+                          <input id="contactName" name="contact_name" type="text"
+                                 class="form-control" required/>
                         </div>
                         <p class="mb-0">Enter full name</p>
                       </div>
                       <div class="col-md-6 mb-2">
                         <div class="mb-1">
-                          <label for="" class="form-label"
-                            >Email address<sup>*</sup></label
+                          <label for="contactEmail" class="form-label"
+                          >Email address<sup>*</sup></label
                           >
-                          <input type="text" class="form-control" />
+                          <input id="contactEmail" name="contact_email" type="text"
+                                 class="form-control"/>
                         </div>
                       </div>
                       <div class="col-6 mb-2">
                         <div class="mb-1">
-                          <label for="" class="form-label"
-                            >Phone number<sup>*</sup></label
+                          <label for="contactPhone" class="form-label"
+                          >Phone number<sup>*</sup></label
                           >
-                          <input type="text" class="form-control" />
+                          <input id="contactPhone" name="contact_phone" type="text"
+                                 class="form-control"/>
                         </div>
                         <p class="mb-0">US only</p>
                       </div>
                       <div class="col-6 mb-2">
                         <div class="mb-1">
-                          <label for="" class="form-label"
-                            >State<sup>*</sup></label
+                          <label for="contactState" class="form-label"
+                          >State<sup>*</sup></label
                           >
-                          <input type="text" class="form-control w-25" />
+                          <input id="contactState" name="contact_state" type="text"
+                                 class="form-control w-25"/>
                         </div>
                         <p class="mb-0">Enter the state you live in</p>
                       </div>
@@ -129,14 +135,15 @@
                       <div class="col-12">
                         <h5 class="mb-2">Reserving a spot as? <sup>*</sup></h5>
                         <div
-                          class="d-flex align-items-start align-items-md-center justify-content-between flex-column flex-md-row mb-3"
+                                class="d-flex align-items-start align-items-md-center justify-content-between flex-column flex-md-row mb-3"
                         >
                           <div class="check-item mb-2 mb-md-0">
-                            <input type="checkbox" name="" id="ch-1" />
-                            <label for="ch-1">
+                            <input type="radio" class="describeYourself"
+                                   name="is_restaurant" id="isRestaurant" value="true"/>
+                            <label for="isRestaurant">
                               <span class="check-ind"></span>
                               <span class="check-text"
-                                >A Restaurant Owner
+                              >A Restaurant Owner
                                 <sup
                                   ><img src="assets/img/info.svg" alt=""
                                 /></sup>
@@ -144,11 +151,12 @@
                             </label>
                           </div>
                           <div class="check-item mb-2 mb-md-0">
-                            <input type="checkbox" name="" id="ch-2" />
-                            <label for="ch-2">
+                            <input type="checkbox" class="describeYourself"
+                                   name="is_delivery_men" id="isDeliveryMen" value="true"/>
+                            <label for="isDeliveryMen">
                               <span class="check-ind"></span>
                               <span class="check-text"
-                                >A Delivery Driver
+                              >A Delivery Driver
                                 <sup
                                   ><img src="assets/img/info.svg" alt=""
                                 /></sup>
@@ -156,8 +164,9 @@
                             </label>
                           </div>
                           <div class="check-item mb-2 mb-md-0">
-                            <input type="checkbox" name="" id="ch-3" />
-                            <label for="ch-3">
+                            <input type="checkbox" class="describeYourself"
+                                   name="is_customer" id="isCustomer" value="true"/>
+                            <label for="isCustomer">
                               <span class="check-ind"></span>
                               <span class="check-text">A Hungry Customer</span>
                             </label>
@@ -168,7 +177,12 @@
                           receiving communications from us <br />
                           through emails, phone calls, or otherwise.
                         </p>
-                        <button type="submit" class="common-btn common-btn-lg">
+                        <input type="hidden" value="launch" name="form_type" id="formType"/>
+                        <button
+                                id="submit"
+                                type="button"
+                                class="common-btn common-btn-lg submit"
+                        >
                           Reserve now
                         </button>
                       </div>
@@ -274,6 +288,6 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/main.js"></script>
-    <script></script>
+    <script src="assets/js/ContactLanuch.js"></script>
   </body>
 </html>
