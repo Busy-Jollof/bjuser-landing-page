@@ -4,7 +4,7 @@ $('document').ready(function () {
             contact_name: $('#contactName').val(),
             contact_email: $('#contactEmail').val(),
             reason_for_contact: $('#reasonForContact').val(),
-            contact_state: $('#contactState').val(),
+            contact_state: $('#contactState :selected').text(),
             contact_phone: $('#contactPhone').val(),
             is_restaurant: $("#isRestaurant").is(':checked') == false ? null : true,
             is_delivery_men: $('#isDeliveryMen').is(':checked') == false ? null : true,
@@ -12,6 +12,7 @@ $('document').ready(function () {
             is_just_asking_question: $('#isJustAskingQuestion').is(':checked') == false ? null : true,
             form_type: $('#formType').val(),
         }
+
         $.ajax({
             url: "https://partners.busyjollof.com/api/v1/contact-submit",
             type: 'POST',
