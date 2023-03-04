@@ -165,7 +165,7 @@
                     to sign up.
                   </p>
                   <div class="common-content-btn">
-                    <a href="" class="common-btn hover-white"
+                    <a href="launch.html" class="common-btn hover-white"
                       ><span class="px-2">Get started</span></a
                     >
                   </div>
@@ -193,11 +193,16 @@
                 by staying connected to our fast growing community.
               </p>
               <form method="post" class="newsletter__form">
-                <input
-                  type="email"
-                  placeholder="Enter your email address here"
-                />
-                <button class="common-btn btn-dark">Signup</button>
+                <input id="contactEmail" name="contact_email" type="email"
+                       placeholder="Enter your email address here"/>
+                <input type="hidden" value="signup" name="form_type" id="formType"/>
+                <button
+                        id="submit"
+                        type="button"
+                        class="common-btn common-btn-lg submit"
+                >
+                  Signup
+                </button>
               </form>
             </div>
           </div>
@@ -219,6 +224,6 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/main.js"></script>
-    <script></script>
+    <script src="assets/js/signup.js"></script>
   </body>
 </html>
