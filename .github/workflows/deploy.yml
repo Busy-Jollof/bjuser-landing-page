@@ -1,0 +1,15 @@
+name: Deploy Staging
+
+on:
+  push:
+    branches: [ "BJF-*" ]
+
+jobs:
+  deploy-on-production:
+
+    runs-on: landing
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Copy Files to web root
+      run: rsync -av . /var/www/html/landing/
