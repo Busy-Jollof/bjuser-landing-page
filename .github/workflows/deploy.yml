@@ -7,7 +7,7 @@ on:
 jobs:
   deploy-on-production:
 
-    runs-on: [self-hosted, linux, x64, landing]
+    runs-on: [self-hosted, Linux, X64, landing]
 
     steps:
     - uses: actions/checkout@v3
