@@ -19,20 +19,38 @@
 <!--------- Offcanvas area start --------->
 <div class="offcanvas-area">
     <div class="menu-close">
-        <i class="far fa-times"></i>
+      <span class=""><img src="assets/img/close-icon.png" alt=""></span>
     </div>
     <div class="offcanvas-menu">
-        <div class="main-menu">
-            <ul class="d-block">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="timeline.html">Our timeline</a></li>
-                <li><a href="launch.html" class="">Launch with us</a></li>
-                <li><a href="contact.html" class="active">Contact us</a></li>
-            </ul>
-        </div>
+      <div class="main-menu">
+        <ul class="d-block mb-list-menu mt-5">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="timeline.html">Our timeline</a></li>
+          <li><a href="launch.html">Launch with us</a></li>
+          <li><a href="contact.html" class="active">Contact us</a></li>
+        </ul>
+            <!--------- CTA area start --------->
+            <div class="cta__areas">
+              <div class="container">
+                <div class="content text-center">
+                  <h4>Want to know more?</h4>
+                  <p>
+                    Checkout our FAQ page for answers to your our frequently asked
+                    questions about us
+                  </p>
+                  <div class="content-btn">
+                    <a href="" class="common-btn"
+                      ><span class="px-2">Get started</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!--------- CTA area end --------->
+      </div>
     </div>
-</div>
+  </div>
 
 <div class="offcanvas-overlay"></div>
 <!--------- Offcanvas area end --------->
@@ -70,7 +88,7 @@
         <div class="container">
             <div
                     class="row contact-inner"
-                    style="background-image: url('assets/img/mail-img.png')"
+                    style="background-image: url('assets/img/mail-img.svg')"
             >
                 <div class="col-xl-10 mx-auto">
                     <div class="row align-items-center">
@@ -88,13 +106,14 @@
                                 <h2>Contact us</h2>
                                 <p>
                                     For more information, inquires or concern, send us an
-                                    email at info@busyjollof.com or fill the form below to get
+                                    email at <span class="makeemailbold">info@busyjollof.com</span> or fill the form below to get
                                     in touch with us.
                                 </p>
                                 <div id="error" style="display: none; color: red"></div>
                                 <div id="success" style="display: none; color: green"></div>
                                 <form method="post"
                                       class="contact__form">
+                                    <input type="hidden" id="formtype" value="contacts" />
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="mb-2">
@@ -103,6 +122,7 @@
                                                 >
                                                 <input id="contactName" name="contact_name" type="text"
                                                        class="form-control" required/>
+                                                <div class="ct-sub-title mt-1 d-block validError" id="ErrorName">Name is required.</div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -112,23 +132,26 @@
                                                 >
                                                 <input id="contactEmail" name="contact_email" type="text"
                                                        class="form-control"/>
+                                                <div class="ct-sub-title mt-1 d-block validError"  id="ErrorEmail">Email is required.</div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-7">
+                                        <div class="col-md-8 col-7">
                                             <div class="mb-2">
                                                 <label for="contactPhone" class="form-label"
                                                 >Phone number<sup>*</sup></label
                                                 >
                                                 <input id="contactPhone" name="contact_phone" type="text"
                                                        class="form-control"/>
+                                                <div class="ct-sub-title mt-1 d-block validError"  id="ErrorPhone">Phone number is required.</div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-5">
-                                            <div class="mb-2">
+                                        <div class="col-md-4 col-5">
+                                            <div class="mb-2 select-bt-main">
                                                 <label for="contactState" class="form-label"
                                                 >State<sup>*</sup></label
                                                 >
-                                                <select id="contactState" name="contact_state" class="form-control w-25">
+                                                <select id="contactState" name="contact_state" class="select-bt form-control ">
+                                                    <option value=""></option>
                                                     <option value="AL">AL</option>
                                                     <option value="AK">AK</option>
                                                     <option value="AZ">AZ</option>
@@ -179,7 +202,10 @@
                                                     <option value="">WI</option>
                                                     <option value="">WY</option>
                                                 </select>
+
                                             </div>
+                                            <div class="ct-sub-title mt-1 d-block validErrorState" style="" id="ErrorcontactUsState">State is required.</div>
+
                                         </div>
                                         <div class="col-md-12">
                                             <div class="mb-3">
@@ -188,9 +214,10 @@
                                                 >
                                                 <textarea id="reasonForContact" name="reason_for_contact"
                                                           class="form-control" rows="3"></textarea>
+                                                <div class="ct-sub-title mt-1 d-block validError" style="text-align: center" id="ErrorReasonState">Reason is required.</div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-12 mb-md-3">
+                                      <!--  <div class="col-12 col-md-12 mb-md-3">
                                             <h5>How would you describe yourself? <sup>*</sup></h5>
                                             <div class="row">
                                                 <div class="col-md-6 mb-3">
@@ -214,12 +241,9 @@
                                                                name="is_delivery_men" id="isDeliveryMen" value="true"/>
                                                         <label for="isDeliveryMen">
                                                             <span class="check-ind"></span>
-                                                            <span class="check-text"
-                                                            >A Delivery Driver
-                                    <sup
-                                    ><img src="assets/img/info.svg'" alt=""
-                                    /></sup>
-                                  </span>
+                                                            <span class="check-text">A Delivery Driver
+                                                                <sup><img src="assets/img/info.svg'" alt=""/></sup>
+                                                            </span>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -229,8 +253,7 @@
                                                                name="is_customer" id="isCustomer" value="true"/>
                                                         <label for="isCustomer">
                                                             <span class="check-ind"></span>
-                                                            <span class="check-text"
-                                                            >A Hungry Customer
+                                                            <span class="check-text">A Hungry Customer
                                     <sup
                                     ><img src="assets/img/info.svg" alt=""
                                     /></sup>
@@ -255,8 +278,15 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>-->
+                                      <!--  <input type="hidden" value="contacts" name="form_type" id="formType"/>-->
+                                        <div class="col-12">
+                                            <p class="small">
+                                                By clicking the reserve now button, you acknowledge
+                                                receiving communications from us through emails, phone
+                                                calls, or otherwise.
+                                            </p>
                                         </div>
-                                        <input type="hidden" value="contacts" name="form_type" id="formType"/>
                                         <div class="col-12">
                                             <button
                                                     id="submit"
@@ -270,13 +300,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <p class="small">
-                                By clicking the reserve now button, you acknowledge
-                                receiving communications from us through emails, phone
-                                calls, or otherwise.
-                            </p>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -287,11 +311,55 @@
 <!--------- Main area end --------->
 
 <!--------- Footer area start --------->
-<footer class="footer">
+<footer class="footer pt-5">
     <div class="container">
-        <div class="copyright">BusyJollof 2023 All Rights Reserved.</div>
+      <div class="footer-blog">
+          <div class="row">
+              <div class="col-md-4">
+                  <span class="logo-footer"><img src="assets/img/Logo-footer.svg" alt=""></span>
+                  <p class="logo-sub-title pt-3">BusyJollof is an online food delivery and ordering platform built with intelligent AI designed to find you the right meals. </p>
+                  <ul class="socail-list d-flex list-unstyled">
+                    <li><a href="" class="socail-icons"><img src="assets/img/Insta.svg" alt=""></a></li>
+                    <li><a href="" class="socail-icons"><img src="assets/img/fb.svg" alt=""></a></li>
+                    <li><a href="" class="socail-icons"><img src="assets/img/tw.png" alt=""></a></li>
+                  </ul>
+              </div>
+              <div class="col-md-2">
+                <h3 class="ft-heading">Pages</h3>
+                <ul class="socail-list-menu list-unstyled">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+                    <li><a href="launch.html" class="nav-link">Launch with us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact us</a></li>
+                  
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <h3 class="ft-heading">Company</h3>
+                <ul class="socail-list-menu list-unstyled">
+                  <li><a href="" class="nav-link">Privacy policy</a></li>
+                  <li><a href="" class="nav-link">Terms & condition</a></li>
+                  <li><a href="" class="nav-link">About</a></li>
+                  <li><a href="" class="nav-link">FAQ</a></li>
+                  
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <div class="last-box-ft">
+                  <h3 class="ft-heading">Company</h3>
+                    <span  class="logo-sub-title pt-1 d-block"> Contact us at <a href="" class="logo-sub-title" >info@busyjollof.com</a> or click the
+                      button below to send us a message</span>
+                    <a href="about.html" class="common-btn btn-1 hover-white"
+                      >Contact us</a
+                    >
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright pt-5 text-white">BusyJollof LLC Copyright © 2023 | All rights reserved</div>
     </div>
-</footer>
+  </footer>
 <!--------- Footer area end --------->
 
 <script src="assets/js/jquery.min.js"></script>
