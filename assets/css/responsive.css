@@ -17,6 +17,32 @@
 
 /* Normal Tablate :991px. */
 @media (max-width: 991px) {
+  .service-blog-main h3 {
+    font-size: 20px;
+    line-height: 24px;
+    height: 74px;
+  }
+  .service-blog-main {
+    padding: 50px 19px 40px;
+    text-align: center;
+    display: block;
+    min-height: 369px;
+  }
+  .offcanvas-area {
+    width: 448px;
+    top: 90px;
+  }
+  .menu-close {
+    display: block;
+    right: 17px;
+  }
+  .mb-list-menu li {
+    border-bottom: 1px solid rgba(181, 181, 181, 0.72);
+    padding-top: 8px;
+  }
+  .cta__areas {
+    padding-top: 69px;
+  }
   .hero__content {
     padding: 36px 20px;
   }
@@ -71,6 +97,156 @@
 
 /* small mobile :320px. */
 @media (max-width: 767px) {
+  
+/*----css--27-3--23--*/
+.offcanvas-area {
+	padding: 35px 35px 214px;
+}
+.service-blog-main {
+	padding: 50px 59px 40px;
+	text-align: center;
+	display: block;
+	min-height: 369px;
+	margin: 0px 0px 45px 0px;
+}
+   .content.delivery-form-main p {
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+  .st-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+   .delivery-form-main .common-btn.common-btn-lg {
+    font-size: 16px;
+    padding: 14px 43px;
+  }
+  .mb-2.select-bt-main {
+    margin-top: 10px;
+  }
+   .common-btn.lrn-btn {
+    font-size: 16px;
+    line-height: 20px;
+  }
+   .inner-head {
+    font-size: 12px;
+    line-height: 15px;
+  }
+   th {
+    font-weight: 600;
+    font-size: 12px;
+  }
+   .table-scroll {
+    overflow-x: auto;
+  }
+   .delivery-form .row .col-md-4.col-5 {
+    width: 100%;
+  }
+  .bnt-title {
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+  }
+   .stet-center-cls {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .delivery-form .row .col-md-5 {
+    width: 100%;
+    margin-top: 8px;
+  }
+  .delivery-form-main .contact__form label.form-label {
+    margin-bottom: 3px;
+    font-size: 14px;
+    text-align: left;
+    display: block;
+  }
+   .contact__form .row {
+    flex-direction: column;
+  }
+  .select-bt-main .form-label {
+    text-align: left;
+    display: block;
+  }
+  .contact__form .row .col-md-8 {
+    width: 100%;
+  }
+  .select-bt.form-control {
+    appearance: auto;
+    float: inherit;
+    max-width: 82px;
+  }
+   .cta__area {
+    padding-top: 2px;
+    padding-bottom: 71px;
+  }
+   .img-fluid {
+    height: 600px;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    padding-left: 0 !important;
+  }
+   .offcanvas-area.active {
+    width: 100%;
+    left: auto;
+    border-radius: 0px;
+    right: 0;
+  }
+.logo-sub-title {
+	max-width: 100%;
+  font-size: 13px;
+}
+.last-box-ft {
+	float: left;
+	padding-top: 44px;
+}
+.last-box-ft .ft-heading {
+	text-align: left;
+}
+.last-box-ft .logo-sub-title {
+	text-align: left;
+	max-width: 100%;
+}
+.last-box-ft .common-btn {
+	float: left;
+	margin-top: 25px;
+}
+.footer {
+	padding-left: 12px;
+}
+.footer-blog {
+	padding-bottom: 42px;
+}
+.socail-list {
+	padding-bottom: 29px;
+}
+.cta__area.ab-cta {
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+/* .cta__area {
+	background: rgba(161, 219, 181, 0.36);
+	margin: 0px 16px 56px;
+} */
+.menu-close {
+	font-size: 22px;
+	color: #000;
+	position: absolute;
+	top: 18px;
+	left: initial;
+	cursor: pointer;
+	transition: .4s;
+	display: block;
+	right: 17px;
+}
+.mb-list-menu li {
+	border-bottom: 1px solid rgba(181, 181, 181, 0.72);
+	padding-top: 8px;
+}
+.cta__areas {
+	padding-top: 141px;
+}
+/*----css--27-3--23--*/
   .hero__wrapper .col-lg-7 {
     max-width: 100%;
     width: 100%;
@@ -81,6 +257,7 @@
   }
   .hero__content {
     padding: 99px 25px 80px;
+    max-width: 100%;
   }
   .hero__wrapper {
     border-radius: 0px;
@@ -150,7 +327,7 @@
   }
   .newsletter__area {
     padding-top: 0px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
   section.newsletter__area .container {
     padding: 0px;
@@ -163,6 +340,11 @@
   }
   .header {
     padding: 12px 0;
+    position: fixed;
+    width: 100%;
+  }
+  .content__area{
+    padding: 95px 0;
   }
   .content h3 {
     font-size: 23px;
@@ -178,8 +360,8 @@
   }
   .launch-icon {
     max-width: 66px;
-    margin-left: -26px;
-    top: -13px;
+    margin-left: -8px;
+    top: -25px;
   }
   label.form-label {
     font-size: 16px;
@@ -222,6 +404,14 @@
   .contact-padding {
     padding: 40px 0px 50px;
   }
+  /*----css--27-3--23--*/
+  .offcanvas-area.active {
+    width: 100%;
+    left: auto;
+    border-radius: 0px;
+    right: 0;
+  }
+/*----css--27-3--23--*/
 }
 
 @media (max-width: 376px) {
@@ -235,22 +425,110 @@
     font-weight: 500;
 }
 
-.offcanvas-area.active {
-  width: 220px;
+ /*----css--27-3--23--*/
+ .copyright {
+	padding-top: 38px !important;
 }
+ .offcanvas-area.active {
+  width: 100%;
+  left: 0;
+  border-radius: 0px;
+  top: 53px !important;
+}
+.logo-sub-title {
+	max-width: 100%;
+  font-size: 13px;
+}
+.last-box-ft {
+	float: left;
+	padding-top: 44px;
+}
+.last-box-ft .ft-heading {
+	text-align: left;
+}
+.last-box-ft .logo-sub-title {
+	text-align: left;
+	max-width: 100%;
+}
+.last-box-ft .common-btn {
+	float: left;
+	margin-top: 25px;
+}
+.footer {
+	padding-left: 12px;
+}
+.footer-blog {
+	padding-bottom: 42px;
+}
+.socail-list {
+	padding-bottom: 29px;
+}
+/* .cta__area {
+	background: rgba(161, 219, 181, 0.36);
+	margin: 0px 16px 56px;
+} */
+.menu-close {
+	font-size: 22px;
+	color: #000;
+	position: absolute;
+	top: 18px;
+	left: initial;
+	cursor: pointer;
+	transition: .4s;
+	display: block;
+	right: 17px;
+}
+.mb-list-menu li {
+	border-bottom: 1px solid rgba(181, 181, 181, 0.72);
+	padding-top: 8px;
+}
+.cta__areas {
+	padding-top: 141px;
+}
+.img-fluid {
+	height: 600px;
+	max-width: 100% !important;
+	margin-left: auto !important;
+	padding-left: 0 !important;
+}
+/*----css--27-3--23--*/
 
   .common-btn, .hero__content p, .common-content p {
     font-size: 12px;
   }
 
   .content h3 {
-    font-size: 20px;
+    font-size: 1.5rem;
    }
 }
 
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .container {
-    width: 450px;
+    max-width: 100%;
   }
 }
+
+@media only screen and (min-width: 390px) and (max-width: 767px) {
+  .validErrorState {
+    color:red;
+    font-size: 13px;
+    clear: both;
+    text-align: left;
+    display: none !important;
+  }
+
+  .validErrorStateRes {
+    color:red;
+    font-size: 13px;
+    clear: both;
+    text-align: left;
+    /* display: none !important;*/
+  }
+
+  .makeemailbold {
+    font-weight: bold;
+  }
+}
+
+
