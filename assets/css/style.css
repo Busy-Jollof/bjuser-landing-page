@@ -172,8 +172,8 @@ a:hover {
     padding: 11px 20px;
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 18px;
     line-height: 1.13;
     text-align: center;
     transition: .3s;
@@ -296,9 +296,9 @@ a:hover {
 .hero__content p {
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
     color: #FFFFFF;
     margin-bottom: 26px;
 }
@@ -306,7 +306,7 @@ a:hover {
 .common-btn {
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     line-height: 1.13;
     text-align: center;
@@ -383,9 +383,9 @@ a:hover {
 }
 
 .common-content p {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
     color: #263238;
 }
 
@@ -553,17 +553,17 @@ input.form-control:focus{
 }
 
 .newsletter__box h5 {
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 23px;
     line-height: 1.1;
     text-align: center;
     color: #FFFFFF;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .newsletter__box p {
     font-weight: 400;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.6;
     text-align: center;
     color: #FFFFFF;
@@ -635,19 +635,15 @@ input.form-control:focus{
     line-height: 1.65;
     color: #263238;
     margin-bottom: 20px;
-
-    @media (max-width: 991px) {
-        
-    }
 }
 
 .about--area::after {
     clip-path: polygon(76% 0, 100% 66%, 68% 100%, 0 100%, 0 41%);
     position: absolute;
-    bottom: 50px;
+    bottom: 120px;
     left: 0;
-    width: 100%;
-    height: calc(100% - 120px);
+    width: 90%;
+    height: calc(100% - 150px);
     content: '';
     z-index: -1;
     background: rgba(2, 152, 55, 0.07);
@@ -681,6 +677,8 @@ input.form-control:focus{
 }
 .img-fluid {
 	padding-left: inherit;
+    width: auto!important;
+    height: auto!important;
 }
 
 .launch-icon {
@@ -911,6 +909,8 @@ input.form-control:focus{
 }
 .common-btn.res-btn {
 	display: block;
+    font-size: 18px;
+    font-weight: 600;
 }
 .service-blog-main h3 {
 	padding-bottom: 30px;
@@ -1044,7 +1044,7 @@ td {
 	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 24px;
 	text-align: center;
 	color: #FFFFFF;
@@ -1074,4 +1074,98 @@ td {
     clear: both;
     text-align: center;
      display: none !important;
+}
+
+/*--------FAQ page css start here----------*/
+
+.faq-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq-list ul li{
+    margin-bottom: 35px;
+}
+.question {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(2, 152, 55, 0.95);
+}
+.text-black {
+  color: #263238 !important;
+}
+.faq-list li p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #263238;
+  margin-bottom: 0;
+}
+
+.thank-you-content {
+  max-width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.stamp-img{
+    margin-bottom: 10px;
+}
+.thank-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.thank-content h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    color: rgba(2, 152, 55, 0.95);
+    margin-bottom: 10px;
+}
+.thank-content p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #263238;
+    max-width: 70%;
+    margin-bottom: 30px;
+}
+
+.thank-you-section {
+  margin: 70px 0;
+}
+
+.privacy-policy {
+  max-width: 960px;
+}
+
+.privacy-policy h3{
+    font-size: 30px;
+}
+.privcy-list li{
+    margin-left: 30px;
+    margin-bottom: 10px!important;
+    list-style-type: disc;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+.privcy-list {
+  margin-bottom: 40px;
 }

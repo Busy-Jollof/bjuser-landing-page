@@ -149,7 +149,8 @@ $('document').ready(function () {
             }
             console.log(formData);
             $.ajax({
-                url: "https://partners.busyjollof.com/api/v1/contact-submit",
+                //url: "https://partners.busyjollof.com/api/v1/contact-submit",
+                url: "http://localhost:8013/api/v1/contact-submit",
                 type: 'POST',
                 data: formData,
                 cache: false,
@@ -157,7 +158,6 @@ $('document').ready(function () {
                     if (data.errors) {
                         var error = '';
                         $.each(data.errors, function (i, val) {
-                            console.log(val)
                             error += val.message + '<br>';
                         })
                         $('#error').html(error)
